@@ -1,0 +1,14 @@
+# 🛍️ Sephduema Store
+---
+
+
+This is a private repo for **Sephduema** e-commerce platform, managing the shop and administrator panel for product management.
+
+---
+
+## Table
+
+- [Quick Start](#quick-start)
+
+
+### Quick Start
