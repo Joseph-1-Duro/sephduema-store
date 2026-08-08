@@ -15,4 +15,7 @@ export const ProductSchema = z.object({
   inStock: z.boolean(),
   price: z.number().positive(),
   images: z.array(ProductImageSchema).nonempty().max(5),
+  category: z.string(),
 })
+
+// product search schema??

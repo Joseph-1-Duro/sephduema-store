@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-style: normal;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

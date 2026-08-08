@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+.announcement-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+  padding: $space-4;
+
+  p {
+    margin-inline: auto;
+  }
+}

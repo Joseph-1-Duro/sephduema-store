@@ -1,6 +1,8 @@
 import { Metadata } from "next";
-import '../globals.scss'
+import { Toaster } from "sonner"
+import "@/styles/main.scss"
 import { fontInter } from "@/ui/font";
+import AnnouncementBar from "@/ui/components/AnnouncemnetBar/AnnouncementBar";
 
 export const metadata: Metadata = {
   title: "Home - Sephduema Store",
@@ -16,6 +18,8 @@ export default function PublicLayout({ children }: Readonly<childrenProps>) {
   return (
     <html lang="en" className={`${fontInter.variable}`}>
       <body>
+        <Toaster richColors position="top-right" />
+        <AnnouncementBar />
         {children}
       </body>
     </html>

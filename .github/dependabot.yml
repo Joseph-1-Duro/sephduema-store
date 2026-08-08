@@ -1,0 +1,15 @@
+version: 2
+
+# ------ npm -------
+updates:
+  - open-pull-requests-limit: 5
+    package-ecosystem: "npm"
+    rebase-strategy: auto
+    schedule:
+      interval: weekly
+      day: "monday"
+      timezone: "Africa/Accra" # change to something to Nigeria related
+      time: "06:00"
+    directory: "/"
+    commit-message:
+      prefix: "chore(deps)"

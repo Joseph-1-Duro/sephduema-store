@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import '../globals.scss'
+import "@/styles/main.scss";
+import "@/styles/admin.scss";
 import { fontInter } from "@/ui/font";
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ interface childrenProps {
 
 export default function AdminLayout({ children }: Readonly<childrenProps>) {
   return (
-    <html lang="en" className={`${fontInter}`}>
+    <html lang="en" className={`${fontInter.variable}`}>
       <body>
         {children}
       </body>

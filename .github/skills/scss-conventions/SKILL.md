@@ -122,3 +122,4 @@ When reviewing existing SCSS or during a PR, flag:
 - `!important` used outside a genuine utility helper
 - Missing responsive behavior on key components
 - Missing `:hover`/`:focus-visible` feedback states
+- Add media query (pointer) & (hover) where interactive is needed, might create a mixin if better
