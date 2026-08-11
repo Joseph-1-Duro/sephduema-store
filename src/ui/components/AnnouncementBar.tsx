@@ -1,7 +1,8 @@
 "use client";
 
 import { useBarStore } from "@/stores/bar.store";
-import { X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
+import Link from "next/link";
 
 export default function AnnouncementBar() {
   const isVisible = useBarStore((state) => state.isVisible);
@@ -12,13 +13,16 @@ export default function AnnouncementBar() {
 
   return (
     <div className="announcement-bar" role="banner" aria-live="polite">
-      <p>We&apos;ve officially launched!</p>
+      <p>
+        We&apos;ve officially launched! 
+        <Link href={"/shop"}>Shop Now! <ArrowRight size={16} /></Link>
+      </p>
 
       <button
-        onClick={dismiss} 
-        className="dismiss-btn" 
+        onClick={dismiss}
+        className="dismiss-btn"
         aria-label="Close announcement bar">
-          <X />
+        <X strokeWidth={5} size={18} />
       </button>
     </div>
   )

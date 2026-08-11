@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import { Toaster } from "sonner"
 import "@/styles/main.scss"
 import { fontInter } from "@/ui/font";
-import AnnouncementBar from "@/ui/components/AnnouncemnetBar/AnnouncementBar";
+import AnnouncementBar from "@/ui/components/AnnouncementBar";
+import Header from "@/ui/layouts/Header";
+import Footer from "@/ui/layouts/Footer";
 
 export const metadata: Metadata = {
   title: "Home - Sephduema Store",
@@ -20,7 +22,11 @@ export default function PublicLayout({ children }: Readonly<childrenProps>) {
       <body>
         <Toaster richColors position="top-right" />
         <AnnouncementBar />
-        {children}
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )

@@ -8,4 +8,5 @@ export type ProductImageType = z.infer<typeof ProductImageSchema>;
 export type CartItem = Pick<ProductType, "id" | "name" | "price"> & {
   quantity: number;
   // selectedSize?: string; 
+  // selectedColor?: string;
 };

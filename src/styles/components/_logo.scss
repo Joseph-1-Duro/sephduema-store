@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  display: flex;
+  align-items: center;
+  // gap: 0.2rem;
+
+  span {
+    color: $color-primary;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+}
+
+.logo--white {
+  span {
+    color: white;
+  }
+}

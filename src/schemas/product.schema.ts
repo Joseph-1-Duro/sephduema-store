@@ -9,11 +9,12 @@ export const ProductImageSchema = z.object({
 
 // add slug
 export const ProductSchema = z.object({
-  id: z.number(),
+  id: z.union([z.string(), z.number()]),
   name: z.string().min(1),
   description: z.string(),
   inStock: z.boolean(),
   price: z.number().positive(),
+  costPrice: z.number().positive(),
   images: z.array(ProductImageSchema).nonempty().max(5),
   category: z.string(),
 })

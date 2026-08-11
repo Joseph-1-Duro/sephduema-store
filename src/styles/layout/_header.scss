@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.site-header {
+  background-color: $color-background;
+  border-bottom: 1px solid rgba($color-text, 0.1);
+  
+  .wrapper {
+    padding-block: $space-4;
+    @include wrapper;
+    @include justify-space-between;
+  }
+}

@@ -1,8 +1,12 @@
-$color-primary: #1a1a1a;
-$color-accent: #e63946;
-$color-background: #ffffff;
-$color-text: #1a1a1a;
-$color-muted: #6b7280;
+$color-primary: hsl(0, 0%, 10%);
+$color-accent: hsl(355, 78%, 56%);
+$color-background: hsl(0, 0%, 100%);
+$color-text: hsl(0, 0%, 10%);
+$color-muted: hsl(220, 9%, 46%);
+
+$color-orange-600: hsl(42, 95%, 61%);
+$color-orange-700: hsl(12, 82%, 59%);
+$color-on-orange: hsl(0, 0%, 100%);
 
 $space-1: 0.25rem;
 $space-2: 0.5rem;

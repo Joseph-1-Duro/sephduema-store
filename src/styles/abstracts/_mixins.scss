@@ -6,6 +6,17 @@
   justify-content: center;
 }
 
+@mixin justify-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin wrapper {
+  width: min(1280px, 100% - 2rem);
+  margin-inline: auto;
+}
+
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {

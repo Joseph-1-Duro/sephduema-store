@@ -3,4 +3,8 @@
 @use 'base/reset';
 @use 'base/typography';
 @use 'layout/layout';
+@use 'layout/header';
+@use 'layout/footer';
 @use 'components/announcementBar';
+@use 'components/logo';
+@use 'components/navbar';

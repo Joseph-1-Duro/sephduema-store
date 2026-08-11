@@ -6,8 +6,24 @@
   justify-content: space-between;
   gap: $space-4;
   padding: $space-4;
+  background-image: linear-gradient(-45deg, $color-orange-700, $color-orange-600);
 
   p {
     margin-inline: auto;
+    color: $color-on-orange;
+    font-size: 0.9375rem;
+
+    a {
+      // use mixins here AI
+      padding-left: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+    }
+  }
+
+  button {
+    color: $color-on-orange;
   }
 }
